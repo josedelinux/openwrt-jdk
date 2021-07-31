@@ -1,6 +1,6 @@
 ## Get your openwrt run openjdk(musl-based)
 
-this scripts will automatically download musl-based openwrt-jdk to current directory 
+this scripts will automatically download musl-based openjdk to current directory 
 
 it works on my raspberry pi 3b+ , my Minecraft server(papermc)  works fine too
 
