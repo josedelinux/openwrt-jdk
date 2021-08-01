@@ -1,6 +1,6 @@
-## Get your openwrt run openjdk(musl-based)
+## Get your OpenWrt run OpenJDK(musl-based)
 
-this scripts will automatically download musl-based openjdk to current directory 
+this scripts will automatically download musl-based OpenJDK to current directory 
 
 it works on my raspberry pi 3b+ , my Minecraft server(papermc)  works fine too
 
@@ -12,7 +12,8 @@ run `./dljdk8.sh` or `./dljdk11.sh`
 
 ## Installation
 
-1. download [openjdk 8 or 11 on release page](https://github.com/josedelinux/openwrt-jdk/releases/) to your directory where you want to install 
-2. run `tar xvzf openjdk*-wrt.tar.gz`
-3. run `chmod +x ./java-1.8-openjdk/bin/*` or `chmod +x ./java-11-openjdk/bin/*`
-4. add java to path(/etc/profile)
+1. go to  [Release page](https://github.com/josedelinux/openwrt-jdk/releases/) to download OpenJDK according to your architecture
+2. Make a directory for the JDK: `mkdir -p /usr/lib/jvm`
+3. Extract the archive: `tar zxvf openjdk-version_arch.tar.gz -C /usr/lib/jvm`
+4. add `export PATH="/usr/lib/jvm/bin:$PATH"` to `/etc/profile`
+
