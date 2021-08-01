@@ -3,7 +3,6 @@
 set -o errexit
 set -o nounset
 
-#try to commentize it when it fails
 #set -o pipefail
 set -x
 
