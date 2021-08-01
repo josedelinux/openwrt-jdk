@@ -16,4 +16,4 @@ run `./dljdk8.sh` or `./dljdk11.sh`
 2. Make a directory for the JDK: `mkdir -p /usr/lib/jvm`
 3. Extract the archive: `tar zxvf openjdk-version_arch.tar.gz -C /usr/lib/jvm`
 4. add `export PATH="/usr/lib/jvm/bin:$PATH"` to `/etc/profile`
-
+5. reboot and type `java -version`
