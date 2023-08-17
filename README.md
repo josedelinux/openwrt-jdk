@@ -2,7 +2,7 @@
 
 This scripts will automatically download musl-based OpenJDK to current directory 
 
-The release page provides compressed tar files for offline installation.
+The release page provides compressed tar files for offline installation. These tar file are just untar and tar back gzip tarballs
 
 It works on my raspberry pi 3b+ , my Minecraft server(papermc)  works fine as well.
 
@@ -18,7 +18,7 @@ run `./dljdk8.sh` or `./dljdk11.sh`
 2. Make a directory for the JDK: `mkdir -p /usr/lib/jvm`
 3. Extract the archive: `tar zxvf openjdk-version_arch.tar.gz -C /usr/lib/jvm`
 4. add `export PATH="/usr/lib/jvm/bin:$PATH"` to `/etc/profile`
-5. reboot and type `java -version`
+5. reboot and then test java with `java --version`
 
 ## Troubleshooting
 
@@ -35,6 +35,14 @@ in that case you will need to use the alpine package before [v3.13](https://wiki
 #### Solution
 here is a [install script](https://gist.github.com/stokito/7dd425da5a12abce8b39dda1bd1106d7) written by [Sergey Ponomarev](https://github.com/stokito)
 
+
+## Better solution(todo)
+
+### Packaging it as an OPKG package for easier installation. 
+
+### Building packages from source
+
 ---
+
 
 This repo is **no longer actively maintained** as I stopped tinkering around on my router.
