@@ -1,0 +1,5 @@
+Package: openjdk8
+Version: 8.275.01
+Architecture: all
+Depends: libstdcpp
+Description: OpenJDK 8 from Alpine Linux 3.12
